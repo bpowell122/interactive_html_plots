@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "interactive-html-plots"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "GPLv3"
+keywords = []
+authors = [
+  { name = "bpowell122", email = "powellb22@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/bpowell122/interactive-html-plots#readme"
+Issues = "https://github.com/bpowell122/interactive-html-plots/issues"
+Source = "https://github.com/bpowell122/interactive-html-plots"
+
+[tool.hatch.version]
+path = "src/interactive_html_plots/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/interactive_html_plots tests}"
+
+[tool.coverage.run]
+source_pkgs = ["interactive_html_plots", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/interactive_html_plots/__about__.py",
+]
+
+[tool.coverage.paths]
+interactive_html_plots = ["src/interactive_html_plots", "*/interactive-html-plots/src/interactive_html_plots"]
+tests = ["tests", "*/interactive-html-plots/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
