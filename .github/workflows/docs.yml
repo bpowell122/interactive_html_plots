@@ -36,6 +36,11 @@ jobs:
         run: |
           python src/interactive_html_plots/main.py
 
+      - name: Check what files exist
+        run: |
+          ls -larth docs/_source/*
+          ls -larth docs/_source/prerendered_figures/*
+
       - name: Sphinx build docs as HTML
         run: |
           sphinx-build docs/_source docs/_build

@@ -117,7 +117,7 @@ def render_figure_2(output_dir=''):
 
 
 if __name__ == "__main__":
-    figure_dir = '../../docs/_source/prerendered_figures'
+    figure_dir = 'docs/_source/prerendered_figures'
     os.makedirs(figure_dir, exist_ok=True)
     render_figure_1(figure_dir)
     render_figure_2(figure_dir)
