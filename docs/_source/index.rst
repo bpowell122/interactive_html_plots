@@ -12,4 +12,4 @@ This site provides examples on generating interactive plots using Plotly, and su
 
    Figure 1 <figure_1>
    Figure 2 <figure_2>
-   Link to source code <https://github.com/bpowell122>
+   Link to source code <https://github.com/bpowell122/interactive_html_plots>
