@@ -23,7 +23,7 @@ Render the ReST files in the ``docs`` directory as HTML files
 3. View the landing page ``docs/_build/html/index.html`` in a web browser
 
 ### Automatically
-This repo includes a GitHub Action to automatically perform the above steps, and serves them to https://bpowell122.github.io/interactive-html-plots, any time a new commit is pushed to the main branch.
+This repo includes a GitHub Action to automatically perform the above steps, and serves them to https://bpowell122.github.io/interactive_html_plots/, any time a new commit is pushed to the main branch.
 
 ## License
 
