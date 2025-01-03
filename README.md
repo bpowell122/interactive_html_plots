@@ -32,6 +32,10 @@ pip install interactive-html-plots
 * https://plotly.com/python/dropdowns/
 * https://hatch.pypa.io/1.13/intro/
 
+Note: 
+    ```plotly.io.write_html(..., full_html=False)```
+    will result in .html file that can be included *within* another page    
+
 ## License
 
 `interactive-html-plots` is distributed under the terms of the [GPLv3](https://spdx.org/licenses/GPLv3.html) license.
